@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Home | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html" >About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Information Technology • Web Development</p>
+      <h1>Tobiloba Adedoyin</h1>
+      <p>I am a University of South Florida student building skills in information technology, web development, and programming. I enjoy creating practical digital projects and learning how technology can solve real-world problems.</p>
+      <a class="btn btn-primary" href="portfolio.html">View My Work</a>
+      <a class="btn btn-secondary" href="resume.html">View Resume</a>
+    </div>
+    <aside class="hero-card" aria-label="University affiliation">
+      <img src="assets/usf-logo.png" alt="University of South Florida logo">
+      <p><strong>Professional focus:</strong> technology, web development, programming, and information systems.</p>
+    </aside>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2>Welcome to my ePortfolio</h2>
+    <p class="section-intro">This site brings together selected coursework, technical projects, interests, and reflections. Each project includes a short explanation of what it demonstrates and why it belongs in my portfolio.</p>
+    <div class="grid">
+      <article class="card"><span class="tag">Featured</span><h3>Portfolio Projects</h3><p>Explore examples of HTML, CSS, JavaScript, and information-systems work.</p><a href="portfolio.html">Explore projects →</a></article>
+      <article class="card"><span class="tag">Professional</span><h3>Resume</h3><p>See my current skills, education, and professional objective in one place.</p><a href="resume.html">View resume →</a></article>
+      <article class="card"><span class="tag">Personal</span><h3>Interests</h3><p>Learn about my interests in gaming, technology, handheld devices, and personal audio.</p><a href="interests.html">Read more →</a></article>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="section-intro">For professional or academic opportunities, the best way to reach me is by email.</p>
+    <a class="btn btn-primary" href="mailto:tobiadedotin@gmail.com">Email Me</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

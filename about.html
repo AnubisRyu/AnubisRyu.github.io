@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>About | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" aria-current="page">About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">About</p><h1>About Me</h1><p class="section-intro">A short introduction to my academic and professional direction.</p></div></section>
+<section class="section"><div class="container prose">
+<h2>Who I Am</h2>
+<p>I am a University of South Florida student interested in technology and the ways digital tools can make information easier to access, understand, and use. My coursework has given me opportunities to work with web development, programming, networking, information security, and information systems.</p>
+<h2>What I Am Building</h2>
+<p>My goal is to continue strengthening my technical foundation while developing projects that show both problem-solving ability and attention to usability. This ePortfolio will grow throughout the semester as I add stronger examples of my work.</p>
+<h2>Skills I Am Developing</h2>
+<ul class="list"><li>HTML and CSS</li><li>JavaScript and basic programming</li><li>Python and Java</li><li>Responsive web design</li><li>Information systems and databases</li><li>Networking and information security concepts</li></ul>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

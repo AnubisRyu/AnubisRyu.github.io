@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Resume | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" aria-current="page">Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">Professional</p><h1>Resume</h1><p class="section-intro">A concise overview of my current education, skills, and career objective.</p></div></section>
+<section class="section"><div class="container">
+<div class="resume-grid">
+<article class="card"><h2>Education</h2><p><strong>University of South Florida</strong></p><p class="meta">Student • Information Technology / related coursework</p></article>
+<article class="card"><h2>Objective</h2><p>To obtain a challenging position in technology or web development where I can apply my programming, information-systems, and web-development skills while continuing to learn.</p></article>
+</div>
+<div class="resume-grid" style="margin-top:1.5rem">
+<article class="card"><h2>Technical Skills</h2><ul class="list"><li>HTML &amp; CSS</li><li>JavaScript</li><li>Python</li><li>Java</li><li>Responsive Web Design</li><li>Information Systems</li><li>Networking fundamentals</li><li>Information security fundamentals</li></ul></article>
+<article class="card"><h2>Professional Contact</h2><p>Email: <a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p><p class="meta">A downloadable resume PDF can be added here later when the final resume is ready.</p></article>
+</div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

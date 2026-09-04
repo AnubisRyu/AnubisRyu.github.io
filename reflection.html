@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Reflection | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" aria-current="page">Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">Growth</p><h1>Reflection</h1><p class="section-intro">This section will document how my skills and thinking develop during the semester.</p></div></section>
+<section class="section"><div class="container prose">
+<h2>Starting Point</h2>
+<p>My earlier projects gave me practice building pages with HTML and CSS, creating navigation, and experimenting with JavaScript. They also showed me areas where a professional portfolio needs to improve, especially accessibility, mobile usability, consistency, and maintainability.</p>
+<h2>What I Want to Improve</h2>
+<p>I want to move from simply making a page work to making a site that is clear and useful for someone who has never seen my work before. That means organizing projects around evidence, writing concise explanations, using meaningful headings and alternative text, and testing the site on different screen sizes.</p>
+<h2>Future Updates</h2>
+<p>This page is intentionally structured as a place to add semester reflections, project lessons, and specific examples of how my work has improved.</p>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

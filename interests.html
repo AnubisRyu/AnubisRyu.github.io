@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Interests | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" aria-current="page">Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">Personal</p><h1>Interests</h1><p class="section-intro">A few interests that help explain what keeps me curious about technology.</p></div></section>
+<section class="section"><div class="container">
+<div class="grid">
+<article class="card"><h3>Gaming</h3><p>I enjoy gaming because it gives me a way to unwind, challenge myself, and connect with people who share the same interests. Games such as Destiny 2 and Marvel Rivals also involve communication, quick decision-making, teamwork, and problem-solving.</p></article>
+<article class="card"><h3>Technology</h3><p>I follow technology across areas such as GPUs, CPUs, laptops, tablets, and handheld gaming devices. I enjoy learning how hardware and software work together and how new products improve performance and usability.</p></article>
+<article class="card"><h3>Personal Audio</h3><p>I have also developed an interest in in-ear monitors and personal audio. Comparing tuning styles, frequency graphs, and driver technologies has become another way for me to explore how engineering and personal preference meet.</p></article>
+</div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

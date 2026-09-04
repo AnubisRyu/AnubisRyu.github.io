@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Contact | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="portfolio.html" >Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">Connect</p><h1>Contact</h1><p class="section-intro">A professional contact page without collecting unnecessary personal information.</p></div></section>
+<section class="section"><div class="container">
+<div class="contact-box">
+<h2>Professional Email</h2>
+<p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+<p>For academic, professional, or portfolio-related communication, email is the preferred contact method.</p>
+</div>
+<small class="note">This portfolio intentionally does not publish a home address, medical information, or family details.</small>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

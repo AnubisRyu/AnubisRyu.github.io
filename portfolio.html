@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tobiloba Adedoyin's professional ePortfolio.">
+<title>Portfolio | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="portfolio.html" aria-current="page">Portfolio</a><a href="resume.html" >Resume</a><a href="interests.html" >Interests</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><div class="container"><p class="eyebrow">Evidence</p><h1>Portfolio</h1><p class="section-intro">Selected work that demonstrates different skills rather than multiple versions of the same assignment.</p></div></section>
+<section class="section"><div class="container">
+<div class="grid">
+<article class="card"><span class="tag">Web Development</span><h3>Personal Website Project</h3><p><strong>What it is:</strong> A multi-page HTML/CSS website with navigation, a resume page, interests page, and contact page.</p><p><strong>Why it is here:</strong> It demonstrates semantic page structure, styling, navigation, and responsive design concepts.</p><div class="project-actions"><a href="interests.html">Related interests →</a></div></article>
+<article class="card"><span class="tag">Information Systems</span><h3>Community Impact Portal</h3><p><strong>What it is:</strong> A front-end project designed around a community organization, with a responsive layout, information cards, statistics, and a resource-allocation form.</p><p><strong>Why it is here:</strong> It demonstrates UI design, CSS layout, JavaScript interaction, and thinking about how information is presented to users.</p></article>
+<article class="card"><span class="tag">Accessibility</span><h3>This ePortfolio</h3><p><strong>What it is:</strong> The current GitHub Pages portfolio, built as a static, mobile-friendly site.</p><p><strong>Why it is here:</strong> The site itself is evidence of accessible navigation, heading structure, alternative text, responsive design, and public web publishing.</p></article>
+</div>
+<h2 style="margin-top:3rem">More Work Coming</h2>
+<p class="section-intro">As the semester continues, I can add stronger artifacts such as project reports, presentations, PDFs, code repositories, and reflections. Long documents should be linked as PDFs rather than pasted onto a page.</p>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle) toggle.addEventListener('click',()=>{
+  const open=toggle.getAttribute('aria-expanded')==='true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

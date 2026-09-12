@@ -72,3 +72,8 @@ small.note{display:block;color:var(--muted);margin-top:.75rem}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
 }
+
+
+.video-card { margin: 1rem 0 1.25rem; }
+.video-card video { display:block; width:100%; max-width:900px; height:auto; border-radius:12px; }
+.citation { font-size:0.95rem; }

@@ -1,65 +1,161 @@
-<!DOCTYPE html>
+```html
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Tobiloba Adedoyin</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="About Tobiloba Adedoyin, his background, interests, and career goals.">
+<title>About Me | Tobiloba Adedoyin</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header">
   <div class="nav-wrap">
-    <a class="brand" href="index.html">Tobiloba Adedoyin</a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="site-nav" aria-label="Main navigation">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">TA</span>
+      <span>Tobiloba Adedoyin</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="about.html" aria-current="page">About Me</a>
+      <a href="about.html" aria-current="page">About</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="resume.html">Resume</a>
       <a href="interests.html">Interests</a>
       <a href="reflection.html">Reflection</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
-<main id="main" class="page-shell">
+
+<main id="main-content">
+
   <section class="page-hero">
-    <p class="eyebrow">About Me</p>
-    <h1>My Story &amp; Career Goals</h1>
-    <p>My interests in technology and problem solving are shaping the direction I want to take after graduation.</p>
-  </section>
-  <section class="content-section">
-    <h2>Video 1: Tell Me About Yourself</h2>
-    <div class="video-card">
-      <video controls preload="metadata" playsinline aria-label="Tell me about myself interview video">
-        <source src="videos/about-me.mp4" type="video/mp4">
-        Your browser does not support the video element.
-      </video>
+    <div class="container">
+      <p class="eyebrow">About Me</p>
+      <h1>My Story &amp; Career Goals</h1>
+      <p class="section-intro">
+        My interests in technology and problem solving are shaping the direction
+        I want to take after graduation.
+      </p>
     </div>
-    <p>I am a University of South Florida student with a strong interest in technology, programming, web development, and cybersecurity. Through my coursework and personal interests, I have developed experience with technologies such as HTML, CSS, JavaScript, Python, and Java. I enjoy learning how technology works and finding practical ways to use it to solve problems. Outside of school, I am interested in gaming, computer hardware, and other areas of technology, which has helped keep me curious about how digital systems work. Cybersecurity is especially interesting to me because it combines technology, problem solving, and continuous learning. As I continue my education, I want to use my coursework and projects to build a strong foundation for my future career.</p>
   </section>
-  <section class="content-section">
-    <h2>Video 2: What Am I Working Toward After Graduation?</h2>
-    <div class="video-card">
-      <video controls preload="metadata" playsinline aria-label="Career goals interview video">
-        <source src="videos/career-goals.mp4" type="video/mp4">
-        Your browser does not support the video element.
-      </video>
+
+  <section class="section">
+    <div class="container prose">
+
+      <h2>Video 1: Tell Me About Yourself</h2>
+
+      <div class="video-card">
+        <video controls preload="metadata" playsinline
+          aria-label="Tell me about myself interview video">
+          <source src="videos/about-me.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+
+      <p>
+        I am a University of South Florida student with a strong interest in
+        technology, programming, web development, and cybersecurity. Through my
+        coursework and personal interests, I have developed experience with
+        technologies such as HTML, CSS, JavaScript, Python, and Java. I enjoy
+        learning how technology works and finding practical ways to use it to
+        solve problems. Outside of school, I am interested in gaming, computer
+        hardware, and other areas of technology, which has helped keep me curious
+        about how digital systems work. Cybersecurity is especially interesting
+        to me because it combines technology, problem solving, and continuous
+        learning. As I continue my education, I want to use my coursework and
+        projects to build a strong foundation for my future career.
+      </p>
+
     </div>
-    <p>After graduation, my goal is to earn a master's degree in cybersecurity and build a career in information security. I am working toward that goal by completing my undergraduate education, strengthening my technical skills, and gaining practical experience through projects and future technology-related opportunities. I plan to continue learning about networking, vulnerabilities, risk management, and other areas of cybersecurity, while also looking for internships, entry-level positions, certifications, or projects that can give me hands-on experience. The field also has a strong employment outlook. The U.S. Bureau of Labor Statistics projects information security analyst employment to grow 28.5 percent from 2024 to 2034. This reinforces my interest in pursuing cybersecurity and motivates me to keep developing the skills and education needed for the field.</p>
   </section>
-  <section class="content-section">
-    <h2>Career Outlook</h2>
-    <p>The cybersecurity field has a strong projected employment outlook. The U.S. Bureau of Labor Statistics projects information security analyst employment to grow 28.5% from 2024 to 2034.</p>
-    <p class="citation">Bureau of Labor Statistics, U.S. Department of Labor. (2026). <em>Information security analysts</em>. Occupational Outlook Handbook. <a href="https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</a></p>
+
+  <section class="section alt">
+    <div class="container prose">
+
+      <h2>Video 2: What Am I Working Toward After Graduation?</h2>
+
+      <div class="video-card">
+        <video controls preload="metadata" playsinline
+          aria-label="Career goals interview video">
+          <source src="videos/career-goals.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+
+      <p>
+        After graduation, my goal is to earn a master's degree in cybersecurity
+        and build a career in information security. I am working toward that
+        goal by completing my undergraduate education, strengthening my
+        technical skills, and gaining practical experience through projects
+        and future technology-related opportunities. I plan to continue
+        learning about networking, vulnerabilities, risk management, and other
+        areas of cybersecurity, while also looking for internships, entry-level
+        positions, certifications, or projects that can give me hands-on
+        experience.
+      </p>
+
+    </div>
   </section>
+
+  <section class="section">
+    <div class="container prose">
+
+      <h2>Career Outlook</h2>
+
+      <p>
+        The cybersecurity field has a strong projected employment outlook.
+        The U.S. Bureau of Labor Statistics projects information security
+        analyst employment to grow 28.5% from 2024 to 2034.
+      </p>
+
+      <p class="citation">
+        Bureau of Labor Statistics, U.S. Department of Labor. (2026).
+        <em>Information security analysts</em>. Occupational Outlook Handbook.
+        <a href="https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">
+          View source
+        </a>
+      </p>
+
+    </div>
+  </section>
+
 </main>
-<footer class="site-footer"><p>© 2026 Tobiloba Adedoyin. Built for my USF ePortfolio.</p></footer>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© 2026 Tobiloba Adedoyin</p>
+    <p>
+      <a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
 <script>
-const button = document.querySelector('.menu-toggle');
+const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
-if (button) button.addEventListener('click', () => { const open = nav.classList.toggle('open'); button.setAttribute('aria-expanded', open); });
+
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+
+    toggle.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('open');
+  });
+}
 </script>
+
 </body>
 </html>
+```

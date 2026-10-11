@@ -83,9 +83,9 @@ small.note{display:block;color:var(--muted);margin-top:.75rem}
 .module-card{border:1px solid var(--border);border-radius:12px;padding:1.5rem;background:var(--white);box-shadow:0 5px 18px rgba(0,0,0,.04)}
 .module-card h2,.module-card h3{color:var(--green-dark);margin-top:.25rem}
 .module-status{display:inline-block;background:#e8f0eb;color:var(--green-dark);font-size:.78rem;font-weight:800;padding:.2rem .55rem;border-radius:999px}
-.table-scroll{overflow-x:auto;margin:1rem 0 2rem;border:1px solid var(--border);border-radius:8px}
-.data-table{width:100%;border-collapse:collapse;min-width:650px;background:var(--white)}
-.data-table th,.data-table td{padding:.8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+.table-scroll{overflow-x:visible;margin:1rem 0 2rem;border:1px solid var(--border);border-radius:8px;width:100%}
+.data-table{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;background:var(--white)}
+.data-table th,.data-table td{padding:.8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);overflow-wrap:anywhere;word-break:normal}
 .data-table th{background:#e8f0eb;color:var(--green-dark)}
 .data-table tr:last-child td{border-bottom:0}
 .module-content h2{color:var(--green-dark);margin-top:2.5rem}
@@ -93,3 +93,9 @@ small.note{display:block;color:var(--muted);margin-top:.75rem}
 .module-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
 .module-actions a{display:inline-block;padding:.65rem .9rem;border:1px solid var(--green);border-radius:7px;text-decoration:none;font-weight:700}
 @media(max-width:700px){.module-grid{grid-template-columns:1fr}.page-hero h1{font-size:2.35rem}}
+
+/* Desktop-first coursework tables: keep every column visible. */
+@media (max-width: 700px) {
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .data-table { min-width: 650px; table-layout: auto; }
+}

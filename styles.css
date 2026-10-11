@@ -18,12 +18,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .skip-link{position:absolute;left:-9999px;top:auto}
 .skip-link:focus{left:1rem;top:1rem;background:var(--white);padding:.75rem 1rem;z-index:9999}
 .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:3px solid var(--gold);box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.nav-wrap{max-width:var(--max);margin:auto;padding:.8rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-wrap{max-width:var(--max);margin:auto;padding:.8rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;position:relative}
 .brand{text-decoration:none;color:var(--green-dark);font-weight:800;letter-spacing:.04em;display:flex;align-items:center;gap:.6rem}
 .brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--green);color:var(--gold);font-weight:900}
-.nav-toggle{display:none;background:var(--green);color:var(--white);border:0;border-radius:7px;padding:.55rem .75rem;font-weight:700}
-.site-nav{display:flex;gap:.35rem;flex-wrap:wrap;justify-content:flex-end}
-.site-nav a{text-decoration:none;color:var(--ink);font-weight:700;padding:.55rem .7rem;border-radius:6px}
+.nav-toggle{display:inline-flex;align-items:center;gap:.45rem;background:var(--green);color:var(--white);border:0;border-radius:7px;padding:.65rem .9rem;font-weight:700;font-size:1rem;cursor:pointer}
+.nav-toggle:hover{background:var(--green-dark)}
+.site-nav{display:none;position:absolute;top:calc(100% + .25rem);right:1.25rem;z-index:1100;min-width:210px;max-height:70vh;overflow-y:auto;flex-direction:column;gap:.2rem;padding:.55rem;background:var(--white);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.site-nav.open{display:flex}
+.site-nav a{text-decoration:none;color:var(--ink);font-weight:700;padding:.65rem .75rem;border-radius:6px}
 .site-nav a:hover,.site-nav a[aria-current="page"]{background:var(--green);color:var(--white)}
 .container{max-width:var(--max);margin:auto;padding:0 1.25rem}
 .hero{background:linear-gradient(135deg,var(--green-dark),var(--green));color:var(--white);padding:6rem 0}
@@ -59,10 +61,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .contact-box{border-left:5px solid var(--gold);background:var(--cream);padding:1.5rem;border-radius:8px}
 small.note{display:block;color:var(--muted);margin-top:.75rem}
 @media(max-width:850px){
-  .nav-toggle{display:block}
-  .site-nav{display:none;width:100%;padding-top:.5rem}
-  .site-nav.open{display:flex;flex-direction:column}
-  .nav-wrap{flex-wrap:wrap}
+  .nav-wrap{flex-wrap:nowrap}
   .hero-grid,.resume-grid{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .hero{padding:4rem 0}
@@ -77,3 +76,20 @@ small.note{display:block;color:var(--muted);margin-top:.75rem}
 .video-card { margin: 1rem 0 1.25rem; }
 .video-card video { display:block; width:100%; max-width:900px; height:auto; border-radius:12px; }
 .citation { font-size:0.95rem; }
+
+
+/* Coursework modules */
+.module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+.module-card{border:1px solid var(--border);border-radius:12px;padding:1.5rem;background:var(--white);box-shadow:0 5px 18px rgba(0,0,0,.04)}
+.module-card h2,.module-card h3{color:var(--green-dark);margin-top:.25rem}
+.module-status{display:inline-block;background:#e8f0eb;color:var(--green-dark);font-size:.78rem;font-weight:800;padding:.2rem .55rem;border-radius:999px}
+.table-scroll{overflow-x:auto;margin:1rem 0 2rem;border:1px solid var(--border);border-radius:8px}
+.data-table{width:100%;border-collapse:collapse;min-width:650px;background:var(--white)}
+.data-table th,.data-table td{padding:.8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+.data-table th{background:#e8f0eb;color:var(--green-dark)}
+.data-table tr:last-child td{border-bottom:0}
+.module-content h2{color:var(--green-dark);margin-top:2.5rem}
+.module-content h3{margin-top:1.5rem}
+.module-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.module-actions a{display:inline-block;padding:.65rem .9rem;border:1px solid var(--green);border-radius:7px;text-decoration:none;font-weight:700}
+@media(max-width:700px){.module-grid{grid-template-columns:1fr}.page-hero h1{font-size:2.35rem}}

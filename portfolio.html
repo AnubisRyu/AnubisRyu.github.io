@@ -12,17 +12,8 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TA</span><span>Tobiloba Adedoyin</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-<nav id="site-nav" class="site-nav" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="gap-brief.html">Gap Brief</a>
-  <a href="resume.html">Resume</a>
-  <a href="interests.html">Interests</a>
-  <a href="reflection.html">Reflection</a>
-  <a href="contact.html">Contact</a>
-</nav>  
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">☰ Menu</button>
+<nav id="site-nav" class="site-nav" aria-label="Main navigation"></nav>  
 </div>
 </header>
 <main id="main-content">
@@ -30,6 +21,7 @@
 <section class="section"><div class="container">
 <div class="grid">
 <article class="card"><span class="tag">Web Development</span><h3>Personal Website Project</h3><p><strong>What it is:</strong> A multi-page HTML/CSS website with navigation, a resume page, interests page, and contact page.</p><p><strong>Why it is here:</strong> It demonstrates semantic page structure, styling, navigation, and responsive design concepts.</p><div class="project-actions"><a href="interests.html">Related interests →</a></div></article>
+<article class="card"><span class="tag">Project Management</span><h3>Module 4: Project Management Plan</h3><p><strong>What it is:</strong> A plan for delivering an audit-ready university software inventory, including scope, phases, stakeholders, risks, and timeline.</p><p><strong>Why it is here:</strong> It demonstrates project planning, risk management, stakeholder communication, and adapting to schedule changes.</p><div class="project-actions"><a href="module4.html">View Module 4 →</a></div></article>
 <article class="card"><span class="tag">Information Systems</span><h3>Community Impact Portal</h3><p><strong>What it is:</strong> A front-end project designed around a community organization, with a responsive layout, information cards, statistics, and a resource-allocation form.</p><p><strong>Why it is here:</strong> It demonstrates UI design, CSS layout, JavaScript interaction, and thinking about how information is presented to users.</p></article>
 <article class="card"><span class="tag">Accessibility</span><h3>This ePortfolio</h3><p><strong>What it is:</strong> The current GitHub Pages portfolio, built as a static, mobile-friendly site.</p><p><strong>Why it is here:</strong> The site itself is evidence of accessible navigation, heading structure, alternative text, responsive design, and public web publishing.</p></article>
 </div>
@@ -43,14 +35,6 @@
     <p><a href="mailto:tobiadedotin@gmail.com">tobiadedotin@gmail.com</a></p>
   </div>
 </footer>
-<script>
-const toggle=document.querySelector('.nav-toggle');
-const nav=document.querySelector('.site-nav');
-if(toggle) toggle.addEventListener('click',()=>{
-  const open=toggle.getAttribute('aria-expanded')==='true';
-  toggle.setAttribute('aria-expanded', String(!open));
-  nav.classList.toggle('open');
-});
-</script>
+<script src="nav.js" defer></script>
 </body>
 </html>

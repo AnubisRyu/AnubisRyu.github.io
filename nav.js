@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <a href="interests.html">Interests</a>
     <a href="reflection.html">Reflection</a>
     <a href="contact.html">Contact</a>
+    <a href="policy-analysis.html">Policy Analysis</a>
   `;
 
   /* Automatically highlight the current page. */

@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
     <a href="portfolio.html">Portfolio</a>
     <a href="modules.html">Modules</a>
     <a href="gap-brief.html">Gap Brief</a>
+    <a href="policy-analysis.html">Policy Analysis</a>
     <a href="resume.html">Resume</a>
     <a href="interests.html">Interests</a>
     <a href="reflection.html">Reflection</a>
     <a href="contact.html">Contact</a>
-    <a href="policy-analysis.html">Policy Analysis</a>
   `;
 
   /* Automatically highlight the current page. */
